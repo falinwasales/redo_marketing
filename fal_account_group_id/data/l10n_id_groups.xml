@@ -1,0 +1,223 @@
+<odoo>
+    <data>
+        <record id="asset" model="account.group">
+            <field name="code_prefix">1</field>
+            <field name="name">Asset</field>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="utang" model="account.group">
+            <field name="code_prefix">2</field>
+            <field name="name">Utang</field>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="modal" model="account.group">
+            <field name="code_prefix">3</field>
+            <field name="name">Modal</field>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="penjualan" model="account.group">
+            <field name="code_prefix">4</field>
+            <field name="name">Penjualan</field>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="hpp" model="account.group">
+            <field name="code_prefix">5</field>
+            <field name="name">HPP</field>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="biaya" model="account.group">
+            <field name="code_prefix">6</field>
+            <field name="name">Biaya</field>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="pendapatan_lain" model="account.group">
+            <field name="code_prefix">8</field>
+            <field name="name">Pendapatan Lain</field>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="biaya_lain" model="account.group">
+            <field name="code_prefix">9</field>
+            <field name="name">Biaya Lain</field>
+            <field name="company_id"></field>
+        </record>
+
+        <!--  -->
+        <record id="asset_lancar" model="account.group">
+            <field name="code_prefix">1-1</field>
+            <field name="name">Asset lancar</field>
+            <field name="parent_id" ref="asset"/>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="asset_tetap" model="account.group">
+            <field name="code_prefix">1-2</field>
+            <field name="name">Aset tetap</field>
+            <field name="parent_id" ref="asset"/>
+            <field name="company_id"></field>
+        </record>
+
+        <!--  -->
+        <record id="kas_dan_setara_kas" model="account.group">
+            <field name="code_prefix">1-11</field>
+            <field name="name">Kas dan setara kas</field>
+            <field name="parent_id" ref="asset_lancar"/>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="piutang" model="account.group">
+            <field name="code_prefix">1-12</field>
+            <field name="name">Piutang</field>
+            <field name="parent_id" ref="asset_lancar"/>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="persediaan" model="account.group">
+            <field name="code_prefix">1-13</field>
+            <field name="name">Persediaan</field>
+            <field name="parent_id" ref="asset_lancar"/>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="biaya_dibayar_dimuka" model="account.group">
+            <field name="code_prefix">1-14</field>
+            <field name="name">Biaya dibayar dimuka</field>
+            <field name="parent_id" ref="asset_lancar"/>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="pajak_dibayar_dimuka" model="account.group">
+            <field name="code_prefix">1-15</field>
+            <field name="name">Pajak dibayar dimuka</field>
+            <field name="parent_id" ref="asset_lancar"/>
+            <field name="company_id"></field>
+        </record>
+
+        <!-- not used on odoo standard COA -->
+        <record id="perlengkapan" model="account.group">
+            <field name="code_prefix">1-16</field>
+            <field name="name">Perlengkapan</field>
+            <field name="parent_id" ref="asset_lancar"/>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="investasi" model="account.group">
+            <field name="code_prefix">1-17</field>
+            <field name="name">Investasi</field>
+            <field name="parent_id" ref="asset_lancar"/>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="utang_lancar" model="account.group">
+            <field name="code_prefix">2-1</field>
+            <field name="name">Utang Lancar</field>
+            <field name="parent_id" ref="utang"/>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="utang_pajak" model="account.group">
+            <field name="code_prefix">2-12</field>
+            <field name="name">Utang Pajak</field>
+            <field name="parent_id" ref="utang_lancar"/>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="utang_jangka_panjang" model="account.group">
+            <field name="code_prefix">2-21</field>
+            <field name="name">Utang Jangka Panjang</field>
+            <field name="parent_id" ref="utang"/>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="biaya_harus_dibayar" model="account.group">
+            <field name="code_prefix">2-51</field>
+            <field name="name">Biaya yang masih harus dibayar</field>
+            <field name="parent_id" ref="utang"/>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="laba_rugi_tagihan" model="account.group">
+            <field name="code_prefix">3-1</field>
+            <field name="name">Laba/rugi ditahan</field>
+            <field name="parent_id" ref="modal"/>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="pendapatan" model="account.group">
+            <field name="code_prefix">4-10</field>
+            <field name="name">pendapatan</field>
+            <field name="parent_id" ref="penjualan"/>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="potongan_penjualan" model="account.group">
+            <field name="code_prefix">4-20</field>
+            <field name="name">Potongan Penjualan</field>
+            <field name="parent_id" ref="penjualan"/>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="harga_pokok_penjualan" model="account.group">
+            <field name="code_prefix">5-10</field>
+            <field name="name">Harga Pokok Penjualan</field>
+            <field name="parent_id" ref="hpp"/>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="biaya_karyawan" model="account.group">
+            <field name="code_prefix">6-10</field>
+            <field name="name">Biaya Karyawan</field>
+            <field name="parent_id" ref="biaya"/>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="biaya_penjualan" model="account.group">
+            <field name="code_prefix">6-21</field>
+            <field name="name">Biaya Penjualan</field>
+            <field name="parent_id" ref="biaya"/>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="biaya_operasional" model="account.group">
+            <field name="code_prefix">6-31</field>
+            <field name="name">Biaya Operasional</field>
+            <field name="parent_id" ref="biaya"/>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="biaya_pajak" model="account.group">
+            <field name="code_prefix">6-41</field>
+            <field name="name">Biaya Pajak</field>
+            <field name="parent_id" ref="biaya"/>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="biaya_depresiasi" model="account.group">
+            <field name="code_prefix">6-51</field>
+            <field name="name">Biaya Depresiasi</field>
+            <field name="parent_id" ref="biaya"/>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="pendapatan_lain_lain" model="account.group">
+            <field name="code_prefix">8-11</field>
+            <field name="name">Pendapatan Lain-lain</field>
+            <field name="parent_id" ref="pendapatan_lain"/>
+            <field name="company_id"></field>
+        </record>
+
+        <record id="biaya_lain_lain" model="account.group">
+            <field name="code_prefix">9-11</field>
+            <field name="name">Biaya Lain-lain</field>
+            <field name="parent_id" ref="biaya_lain"/>
+            <field name="company_id"></field>
+        </record>
+
+    </data>
+</odoo>

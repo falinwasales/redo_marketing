@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Chart Template -->
+    <record id="fal_l10n_id" model="account.chart.template">
+        <field name="property_account_receivable_id" ref="fal_l10n_id.piutang_usaha"/>
+        <field name="property_account_payable_id" ref="fal_l10n_id.hutang_usaha"/>
+        <field name="property_account_expense_id" ref="fal_l10n_id.harga_pokok_penjualan_acc"/>
+        <field name="property_account_income_id" ref="fal_l10n_id.penjualan_acc"/>
+        <field name="property_account_expense_categ_id" ref="fal_l10n_id.harga_pokok_penjualan_acc"/>
+        <field name="property_account_income_categ_id" ref="fal_l10n_id.penjualan_acc"/>
+        <field name="income_currency_exchange_account_id" ref="fal_l10n_id.keuntungan_selisih_kurs"/>
+        <field name="expense_currency_exchange_account_id" ref="fal_l10n_id.beban_bunga"/>
+        <field name="default_pos_receivable_account_id" ref="fal_l10n_id.piutang_usaha_pos"/>
+    </record>
+</odoo>

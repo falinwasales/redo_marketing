@@ -1,0 +1,636 @@
+<odoo>
+    <data>
+        <record id="l10n_id.a_1_111001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.kas_dan_setara_kas"/>
+        </record>
+
+        <record id="l10n_id.a_1_111002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.kas_dan_setara_kas"/>
+        </record>
+
+        <record id="l10n_id.a_1_112001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.kas_dan_setara_kas"/>
+        </record>
+
+        <record id="l10n_id.a_1_112002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.kas_dan_setara_kas"/>
+        </record>
+
+        <record id="l10n_id.a_1_112003" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.kas_dan_setara_kas"/>
+        </record>
+
+        <record id="l10n_id.a_1_112004" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.kas_dan_setara_kas"/>
+        </record>
+
+        <record id="l10n_id.a_1_112005" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.kas_dan_setara_kas"/>
+        </record>
+
+        <record id="l10n_id.a_1_112006" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.kas_dan_setara_kas"/>
+        </record>
+
+        <record id="l10n_id.a_1_112007" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.kas_dan_setara_kas"/>
+        </record>
+
+        <record id="l10n_id.a_1_121001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.piutang"/>
+        </record>
+
+        <record id="l10n_id.a_1_1210011" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.piutang"/>
+        </record>
+
+        <record id="l10n_id.a_1_121002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.piutang"/>
+        </record>
+
+        <record id="l10n_id.a_1_130001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.persediaan"/>
+        </record>
+
+        <record id="l10n_id.a_1_130002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.persediaan"/>
+        </record>
+
+        <record id="l10n_id.a_1_130002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.persediaan"/>
+        </record>
+
+        <record id="l10n_id.a_1_130003" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.persediaan"/>
+        </record>
+
+        <record id="l10n_id.a_1_130004" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.persediaan"/>
+        </record>
+
+        <record id="l10n_id.a_1_130005" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.persediaan"/>
+        </record>
+
+        <record id="l10n_id.a_1_130006" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.persediaan"/>
+        </record>
+
+        <record id="l10n_id.a_1_130007" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.persediaan"/>
+        </record>
+
+        <record id="l10n_id.a_1_130008" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.persediaan"/>
+        </record>
+
+        <record id="l10n_id.a_1_130009" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.persediaan"/>
+        </record>
+
+        <record id="l10n_id.a_1_130010" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.persediaan"/>
+        </record>
+
+        <record id="l10n_id.a_1_130011" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.persediaan"/>
+        </record>
+
+        <record id="l10n_id.a_1_130012" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.persediaan"/>
+        </record>
+
+        <record id="l10n_id.a_1_130013" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.persediaan"/>
+        </record>
+
+        <record id="l10n_id.a_1_130014" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.persediaan"/>
+        </record>
+
+        <record id="l10n_id.a_1_130015" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.persediaan"/>
+        </record>
+
+        <record id="l10n_id.a_1_130016" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.persediaan"/>
+        </record>
+
+        <record id="l10n_id.a_1_130017" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.persediaan"/>
+        </record>
+
+        <record id="l10n_id.a_1_130018" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.persediaan"/>
+        </record>
+
+        <record id="l10n_id.a_1_141001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.asset_lancar"/>
+        </record>
+
+        <record id="l10n_id.a_1_141002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_dibayar_dimuka"/>
+        </record>
+
+        <record id="l10n_id.a_1_141003" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_dibayar_dimuka"/>
+        </record>
+
+        <record id="l10n_id.a_1_151001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.pajak_dibayar_dimuka"/>
+        </record>
+
+        <record id="l10n_id.a_1_151002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.pajak_dibayar_dimuka"/>
+        </record>
+
+        <record id="l10n_id.a_1_151003" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.pajak_dibayar_dimuka"/>
+        </record>
+
+        <record id="l10n_id.a_1_180000" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.asset_lancar"/>
+        </record>
+
+        <record id="l10n_id.a_1_211003" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.piutang"/>
+        </record>
+
+        <record id="l10n_id.a_1_211004" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.piutang"/>
+        </record>
+
+        <record id="l10n_id.a_1_221001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.asset_tetap"/>
+        </record>
+
+        <record id="l10n_id.a_1_221002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.asset_tetap"/>
+        </record>
+
+        <record id="l10n_id.a_1_221003" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.asset_tetap"/>
+        </record>
+
+        <record id="l10n_id.a_1_221004" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.asset_tetap"/>
+        </record>
+
+        <record id="l10n_id.a_1_221005" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.asset_tetap"/>
+        </record>
+
+        <record id="l10n_id.a_1_221006" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.asset_tetap"/>
+        </record>
+
+        <record id="l10n_id.a_1_228101" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.asset_tetap"/>
+        </record>
+
+        <record id="l10n_id.a_1_228102" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.asset_tetap"/>
+        </record>
+
+        <record id="l10n_id.a_1_228103" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.asset_tetap"/>
+        </record>
+
+        <record id="l10n_id.a_1_228104" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.asset_tetap"/>
+        </record>
+
+        <record id="l10n_id.a_1_228105" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.asset_tetap"/>
+        </record>
+
+        <record id="l10n_id.a_2_110001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.utang_lancar"/>
+        </record>
+
+        <record id="l10n_id.a_2_110002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.utang_lancar"/>
+        </record>
+
+        <record id="l10n_id.a_2_110003" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.utang_lancar"/>
+        </record>
+
+        <record id="l10n_id.a_2_110004" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.utang_lancar"/>
+        </record>
+
+        <record id="l10n_id.a_2_121001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.utang_pajak"/>
+        </record>
+
+        <record id="l10n_id.a_2_121002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.utang_pajak"/>
+        </record>
+
+        <record id="l10n_id.a_2_121003" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.utang_pajak"/>
+        </record>
+
+        <record id="l10n_id.a_2_121004" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.utang_pajak"/>
+        </record>
+
+        <record id="l10n_id.a_2_121005" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.utang_pajak"/>
+        </record>
+
+        <record id="l10n_id.a_2_122101" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.utang_pajak"/>
+        </record>
+
+        <record id="l10n_id.a_2_122102" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.utang_pajak"/>
+        </record>
+
+        <record id="l10n_id.a_2_211001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.utang_jangka_panjang"/>
+        </record>
+
+        <record id="l10n_id.a_2_211002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.utang_jangka_panjang"/>
+        </record>
+
+        <record id="l10n_id.a_2_511001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_harus_dibayar"/>
+        </record>
+
+        <record id="l10n_id.a_2_511002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_harus_dibayar"/>
+        </record>
+
+        <record id="l10n_id.a_2_511003" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_harus_dibayar"/>
+        </record>
+
+        <record id="l10n_id.a_2_511004" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_harus_dibayar"/>
+        </record>
+
+        <record id="l10n_id.a_2_511005" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_harus_dibayar"/>
+        </record>
+
+        <record id="l10n_id.a_2_511006" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_harus_dibayar"/>
+        </record>
+
+        <record id="l10n_id.a_2_511007" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_harus_dibayar"/>
+        </record>
+
+        <record id="l10n_id.a_2_511008" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_harus_dibayar"/>
+        </record>
+
+        <record id="l10n_id.a_2_511009" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_harus_dibayar"/>
+        </record>
+
+        <record id="l10n_id.a_2_511010" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_harus_dibayar"/>
+        </record>
+
+        <record id="l10n_id.a_2_511011" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_harus_dibayar"/>
+        </record>
+
+        <record id="l10n_id.a_2_811001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.utang_lancar"/>
+        </record>
+
+        <record id="l10n_id.a_2_811002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.utang_lancar"/>
+        </record>
+
+        <record id="l10n_id.a_2_811003" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.utang_lancar"/>
+        </record>
+
+<!--         <record id="l10n_id.a_2_900000" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.modal"/>
+        </record> -->
+
+        <record id="l10n_id.a_3_110001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.modal"/>
+        </record>
+
+        <record id="l10n_id.a_3_110002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.modal"/>
+        </record>
+
+        <record id="l10n_id.a_3_110003" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.modal"/>
+        </record>
+
+        <record id="l10n_id.a_3_110004" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.modal"/>
+        </record>
+
+        <record id="l10n_id.a_3_121001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.modal"/>
+        </record>
+
+        <record id="l10n_id.a_3_151001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.modal"/>
+        </record>
+
+        <record id="l10n_id.a_3_151002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.modal"/>
+        </record>
+
+        <record id="l10n_id.a_3_900000" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.modal"/>
+        </record>
+
+        <record id="l10n_id.a_4_100001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.penjualan"/>
+        </record>
+
+        <record id="l10n_id.a_4_200006" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.penjualan"/>
+        </record>
+
+        <record id="l10n_id.a_4_200007" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.penjualan"/>
+        </record>
+
+        <record id="l10n_id.a_5_100001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.harga_pokok_penjualan"/>
+        </record>
+
+        <record id="l10n_id.a_6_110001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_110002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_110003" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_110004" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_110005" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_110006" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_110007" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_110008" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_110009" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_110010" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_211001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya"/>
+        </record>
+
+        <record id="l10n_id.a_6_211002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_penjualan"/>
+        </record>
+
+        <record id="l10n_id.a_6_211003" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_penjualan"/>
+        </record>
+
+        <record id="l10n_id.a_6_211004" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_penjualan"/>
+        </record>
+
+        <record id="l10n_id.a_6_311001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_311002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_311003" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya"/>
+        </record>
+
+        <record id="l10n_id.a_6_311004" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya"/>
+        </record>
+
+        <record id="l10n_id.a_6_311005" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_311006" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_311007" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_311008" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_311009" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_311010" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya"/>
+        </record>
+
+        <record id="l10n_id.a_6_311011" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_311012" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_311013" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_311014" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya"/>
+        </record>
+
+        <record id="l10n_id.a_6_311015" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya"/>
+        </record>
+
+        <record id="l10n_id.a_6_311016" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_311018" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya"/>
+        </record>
+
+        <record id="l10n_id.a_6_411001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_411002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_411003" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_411004" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_penjualan"/>
+        </record>
+
+        <record id="l10n_id.a_6_411005" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_511001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_511002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya"/>
+        </record>
+
+        <record id="l10n_id.a_6_511003" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya"/>
+        </record>
+
+        <record id="l10n_id.a_6_511004" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_511006" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_511007" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_511008" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_pajak"/>
+        </record>
+
+        <record id="l10n_id.a_6_511009" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_511010" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_511011" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_611001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_611002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_611003" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_operasional"/>
+        </record>
+
+        <record id="l10n_id.a_6_611004" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_pajak"/>
+        </record>
+
+        <record id="l10n_id.a_6_611005" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_pajak"/>
+        </record>
+
+        <record id="l10n_id.a_6_710001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_depresiasi"/>
+        </record>
+
+        <record id="l10n_id.a_6_710002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_depresiasi"/>
+        </record>
+
+        <record id="l10n_id.a_6_710003" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_depresiasi"/>
+        </record>
+
+        <record id="l10n_id.a_6_710004" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_depresiasi"/>
+        </record>
+
+        <record id="l10n_id.a_6_710005" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_depresiasi"/>
+        </record>
+
+        <record id="l10n_id.a_6_710006" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_depresiasi"/>
+        </record>
+
+        <record id="l10n_id.a_6_900000" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya"/>
+        </record>
+
+        <record id="l10n_id.a_8_110001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.pendapatan_lain_lain"/>
+        </record>
+
+        <record id="l10n_id.a_8_110002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.pendapatan_lain_lain"/>
+        </record>
+
+        <record id="l10n_id.a_8_110003" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.pendapatan_lain_lain"/>
+        </record>
+
+        <record id="l10n_id.a_8_110004" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.pendapatan_lain_lain"/>
+        </record>
+
+        <record id="l10n_id.a_8_110009" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.pendapatan_lain_lain"/>
+        </record>
+
+        <record id="l10n_id.a_9_110001" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_lain_lain"/>
+        </record>
+
+        <record id="l10n_id.a_9_110002" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_lain_lain"/>
+        </record>
+
+        <record id="l10n_id.a_9_110003" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_lain_lain"/>
+        </record>
+
+        <record id="l10n_id.a_9_110009" model="account.account.template">
+            <field name="group_id" ref="fal_account_group_id.biaya_lain_lain"/>
+        </record>
+
+    </data>
+</odoo>
