@@ -1,0 +1,26 @@
+<odoo>
+    <record id="commission_report_wizard_view" model="ir.ui.view">
+        <field name="name">fal.commission.report.wizard</field>
+        <field name="model">fal.commission.report.wizard</field>
+        <field name="arch" type="xml">
+            <form create="0">
+                <group>
+                    <field name="user_id"/>
+                    <field name="user_ids" widget="many2many_tags"/>
+                </group>
+                <field name="invoice_ids"/>
+                <footer>
+                    <button string="Print" name="print_commission_report" type="object" class="oe_highlight"/>
+                    <button string="Cancel" class="btn btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="commission_report_wizard_action" model="ir.actions.act_window">
+        <field name="name">Commission Report</field>
+        <field name="res_model">fal.commission.report.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>
