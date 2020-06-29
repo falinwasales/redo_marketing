@@ -121,7 +121,7 @@ class FalCommision(models.Model):
         else:
             amount = self.total_payment_amount * self.fal_commission_rule.percentage / 100
 
-        if self.fal_commission_rule.target_amount and total_payment_amount < self.fal_commission_rule.target_amount:
+        if self.fal_commission_rule.target_amount and self.total_payment_amount < self.fal_commission_rule.target_amount:
             amount = 0.0
 
         self.commission_amount = amount
