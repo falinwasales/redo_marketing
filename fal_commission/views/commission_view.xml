@@ -9,14 +9,14 @@
                 <form create="false">
                     <sheet>
                         <h1>
-                            <field name="name"/>
+                            <field name="name" readonly="1"/>
                         </h1>
                         <group>
                             <group>
                                 <field name="fal_commission_rule"/>
+                                <field name="fal_member_ids" widget="many2many_tags"/>
                             </group>
                         </group>
-                        <field name="fal_member_ids" widget="many2many_tags"/>
                     </sheet>
                 </form>
             </field>
