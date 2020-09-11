@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Sales Person -->
+        <record id="fal_salesperson_view_form" model="ir.ui.view">
+            <field name="name">salesperson.form</field>
+            <field name="model">res.users</field>
+            <field name="arch" type="xml">
+                <form create="false">
+                    <sheet>
+                        <h1>
+                            <field name="name" readonly="1"/>
+                        </h1>
+                        <group>
+                            <group>
+                                <field name="fal_commission_rule"/>
+                                <field name="fal_member_ids" widget="many2many_tags"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="fal_salesperson_view_tree" model="ir.ui.view">
+            <field name="name">salesperson.tree</field>
+            <field name="model">res.users</field>
+            <field name="arch" type="xml">
+                <tree create="false">
+                    <field name="name"/>
+                    <field name="fal_commission_rule"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_salesperson_action" model="ir.actions.act_window">
+            <field name="name">Sales Person</field>
+            <field name="res_model">res.users</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'tree', 'view_id': ref('fal_salesperson_view_tree')}),
+            (0, 0, {'view_mode': 'form', 'view_id': ref('fal_salesperson_view_form')})]"/>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+              </p>
+            </field>
+        </record>
+
+        <!-- Product Sales -->
+        <record id="view_product_sales_action" model="ir.actions.act_window">
+            <field name="name">Product Sales</field>
+            <field name="res_model">sale.order.line</field>
+            <field name="view_mode">tree,pivot</field>
+            <field name="context">{'group_by':['salesman_id', 'product_id']}</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+              </p>
+            </field>
+        </record>
+
+
+        <record id="view_fal_product_sales_pivot" model="ir.ui.view">
+            <field name="name">fal.commission.pivot</field>
+            <field name="model">sale.order.line</field>
+            <field name="arch" type="xml">
+                <pivot string="Product Sales Report">
+                    <field name="price_total" type="measure"/>
+                </pivot>
+            </field>
+        </record>
+
+        <!-- Comission -->
+
+        <record id="fal_commission_form_view" model="ir.ui.view">
+            <field name="name">fal.commission.form</field>
+            <field name="model">fal.commission</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="compute_commission" class="oe_highlight" string="Compute" type="object" states="draft"/>
+                        <button name="action_confirm" class="oe_highlight" string="Confirm" type="object" states="draft" groups="fal_commission.group_commission_approval"/>
+                        <button name="action_draft" class="oe_highlight" string="Set to draft" type="object" states="confirm" groups="fal_commission.group_commission_approval"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="user_id" class="oe_edit_only"/>
+                            <h1><field name="user_id" context="{'form_view_ref': 'fal_commission.fal_salesperson_view_form'}" required="1" placeholder="Sales Person"
+                                options="{'no_create': True}"/></h1>
+                        </div>
+                        <group>
+                            <group>
+                                <label for="date_start" string="Commission Period"/>
+                                <div><field name="date_start" class="oe_inline"/> to <field name="date_end" class="oe_inline"/></div>
+                                <field name="name"/>
+                                <field name="member_ids" widget="many2many_tags"/>
+                            </group>
+                            <group>
+                                <field name="fal_commission_rule"/>
+                                <field name="search_by"/>
+                                <field name="company_id" groups="base.group_multi_company" options="{'no_create': True}"/>
+                                <field name="currency_id" invisible="1"/>
+                                <field name="commission_amount"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Payments">
+                                <field name="payment_ids" nolabel="1"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="fal_commission_tree_view" model="ir.ui.view">
+            <field name="name">fal.commission.tree</field>
+            <field name="model">fal.commission</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="user_id"/>
+                    <field name="total_payment_amount" sum="payments"/>
+                    <field name="commission_amount" sum="commission"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_fal_commission_pivot" model="ir.ui.view">
+            <field name="name">fal.commission.pivot</field>
+            <field name="model">fal.commission</field>
+            <field name="arch" type="xml">
+                <pivot string="Commission Report">
+                    <field name="total_payment_amount" type="measure"/>
+                    <field name="commission_amount" type="measure"/>
+                </pivot>
+            </field>
+        </record>
+
+        <record id="view_fal_commission_filter" model="ir.ui.view">
+            <field name="name">fal.commission.filter</field>
+            <field name="model">fal.commission</field>
+            <field name="arch" type="xml">
+                <search string="Search Commission">
+                    <field name="user_id"/>
+                    <group expand="0" string="Group By">
+                        <filter name="groupby_user_id" string="User" domain="[]" context="{'group_by':'user_id'}"/>
+                        <filter name="groupby_date" string="Date" domain="[]" context="{'group_by':'date_start:month'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="view_fal_commission_action" model="ir.actions.act_window">
+            <field name="name">Commission</field>
+            <field name="res_model">fal.commission</field>
+            <field name="view_mode">tree,form,pivot</field>
+            <field name="context">{'search_default_groupby_user_id': 1, 'search_default_groupby_date': 1}</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to record a Comission
+              </p>
+            </field>
+        </record>
+
+        <!-- RULE -->
+        <record id="fal_commission_rule_form_view" model="ir.ui.view">
+            <field name="name">fal.commission.rule.form</field>
+            <field name="model">fal.commission.rule</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <h1>
+                            <field name="name"/>
+                        </h1>
+                        <group>
+                            <group>
+                                <field name="rule_type"/>
+                                <field name="search_by"/>
+                                <field name="target_amount"/>
+                                <label for="percentage"/>
+                                <div>
+                                    <field name="percentage" class="oe_inline"/>
+                                    <span class="o_form_label oe_inline">%</span>
+                                </div>
+                                <field name="amount_python_compute" attrs="{'invisible': [('rule_type', '!=', 'code')]}"/>
+                            </group>
+                            <group>
+                                <field name="company_id" groups="base.group_multi_company" options="{'no_create': True}"/>
+                                <field name="currency_id" groups="base.group_multi_currency"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="fal_commission_rule_tree_view" model="ir.ui.view">
+            <field name="name">fal.commission.rule.tree</field>
+            <field name="model">fal.commission.rule</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="percentage"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_fal_commission_rule_action" model="ir.actions.act_window">
+            <field name="name">Commission Rules</field>
+            <field name="res_model">fal.commission.rule</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to record a Comission
+              </p>
+            </field>
+        </record>
+
+
+
+        <menuitem id="menu_root_action_commission" name="Commission" sequence="1" groups="fal_commission.group_commission_user,fal_commission.group_commission_manager,fal_commission.group_commission_approval"/>
+
+        <menuitem id="menu_commission" name="Commission" parent="menu_root_action_commission" sequence="1"/>
+        <menuitem id="menu_commission_configuration" name="Configuration" parent="menu_root_action_commission" sequence="1"/>
+
+        <menuitem id="menu_fal_commission" name="Commission" parent="menu_commission" action="view_fal_commission_action" sequence="1"/>
+        <menuitem id="menu_fal_commission_product_sales" name="Product Sales" parent="menu_commission" action="view_product_sales_action" sequence="2"/>
+
+        <menuitem id="menu_salesperson" name="Sales Person" action="view_salesperson_action" parent="menu_commission_configuration"/>
+        <menuitem action="view_fal_commission_rule_action" id="menu_action_commission" parent="menu_commission_configuration" sequence="1"/>
+        <menuitem action="sales_team.sales_team_config_action" id="menu_action_commission_sales_team" parent="menu_commission_configuration" name="Sales Teams" sequence="2"/>
+
+        <!-- <menuitem action="commission_report_wizard_action" id="menu_action_wizard_commission" parent="menu_commission" sequence="2"/> -->
+    </data>
+</odoo>

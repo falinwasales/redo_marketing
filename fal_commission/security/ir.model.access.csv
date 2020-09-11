@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_commission,commission.user,model_fal_commission,fal_commission.group_commission_user,1,1,0,0
+access_commission_manager,commission.manager,model_fal_commission,fal_commission.group_commission_manager,1,1,1,1
+access_commission_approval,commission.aproval,model_fal_commission,fal_commission.group_commission_approval,1,1,1,1
+access_commission_rule,commission.rule.user,model_fal_commission_rule,base.group_user,1,1,1,1
