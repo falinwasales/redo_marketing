@@ -18,8 +18,8 @@
         'sale_stock',
     ],
     'data': [
-        'views/product_template_views.xml'
-        'views/sale_order_views.xml'
+        'views/product_template_views.xml',
+        'views/sale_order_views.xml',
     ],
     'images': [
         # 'static/description/lead_project_screenshot.png'
