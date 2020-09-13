@@ -16,10 +16,10 @@
     ''',
     'depends': [
         'sale_stock',
-        'product'
     ],
     'data': [
         'views/product_template_views.xml'
+        'views/sale_order_views.xml'
     ],
     'images': [
         # 'static/description/lead_project_screenshot.png'

@@ -1,0 +1,18 @@
+<odoo>
+    <data>
+        <record id="fal_sale_order_form_view_redo_inherit" model="ir.ui.view">
+            <field name="name">fal_sale_order_form_view_redo_inherit</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='partner_shipping_id']" position="after">
+                    <field name="fal_partner_ids" invisible="1"/>
+                    <field name="fal_product_ids" invisible="1"/>
+                </xpath>
+                <xpath expr="//tree/field[@name='product_id']" position="attributes">
+                    <attribute name="domain">[('id', 'in', parent.fal_product_ids), ('sale_ok', '=', True), '|', ('company_id', '=', False), ('company_id', '=', parent.company_id)]</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
