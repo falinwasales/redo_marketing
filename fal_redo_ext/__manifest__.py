@@ -18,6 +18,7 @@
         'sale_stock',
     ],
     'data': [
+        'security/security.xml',
         'views/product_template_views.xml',
         'views/sale_order_views.xml',
     ],
