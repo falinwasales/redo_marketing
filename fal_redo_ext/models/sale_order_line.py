@@ -45,7 +45,7 @@ class SaleOrderLine(models.Model):
     def _computesalechek(self):
         for line in self:
             if line.product_id.type == 'product':
-                if line.qty_available_today <= line.product_uom_qty:
+                if line.qty_available_today < line.product_uom_qty:
                     line.fal_sale_check = True
                 else:
                     line.fal_sale_check = False
